@@ -25,15 +25,10 @@ const observer = new IntersectionObserver((entries, observer) => {
     });
 }, observerOptions);
 
-// Set initial state and observe sections
+// Observe sections
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.section').forEach(section => {
         section.style.opacity = '0';
-        section.style.transition = 'opacity 0.5s ease-in-out';
         observer.observe(section);
-        // Add a small delay before starting the fade-in
-        setTimeout(() => {
-            section.classList.add('fade-in');
-        }, 100);
     });
 });
