@@ -106,14 +106,22 @@ nav a:hover {
 
 .hero-content h2 {
     font-family: var(--font-serif);
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: var(--accent-color);
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
 /* Sections */
